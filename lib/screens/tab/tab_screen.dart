@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
+import 'package:parking/screens/category/category_screen.dart';
+import 'package:parking/screens/chat/chat_screen.dart';
 import 'package:parking/screens/home/home_screen.dart';
+import 'package:parking/screens/profile/profile_screen.dart';
 
 class TabScreen extends StatefulWidget{
   @override
@@ -33,10 +36,10 @@ class _TabScreenState extends State<TabScreen> with WidgetsBindingObserver {
         },
         children: <Widget>[
           HomeScreen(),
+          CategoryScreen(),
           Container(),
-          Container(),
-          Container(),
-          Container(),
+          ChatScreen(),
+          ProfileScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -57,30 +60,35 @@ class _TabScreenState extends State<TabScreen> with WidgetsBindingObserver {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
+              size: 20,
             ),
             title: Text("홈"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.menu,
+              size: 20,
             ),
             title: Text("카테고리"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.edit,
+              size: 20,
             ),
-            title: Text("클쓰기"),
+            title: Text("글쓰기"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.chat_bubble_outline,
+              size: 20,
             ),
             title: Text("채팅"),
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
+              size: 20,
             ),
             title: Text("나의 주차"),
           ),
