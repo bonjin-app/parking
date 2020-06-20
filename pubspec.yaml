@@ -29,6 +29,25 @@ dependencies:
   # 로그을 출력하기 위한 플러그인(옵션)
   logger: ^0.9.1
 
+  # Permission
+  permission_handler: ^3.0.0
+
+  # 이미지 라이브러리에서 이미지를 선택하고 카메라로 새 사진을 찍기위한 iOS 및 Android 용 Flutter 플러그인
+  image_picker: ^0.6.7+1
+  # 파일 시스템에서 일반적으로 사용되는 위치를 찾기위한 Flutter 플러그인 iOS 및 Android를 지원
+  path_provider: ^1.6.10
+  # InheritedWidget 을 감싸고 사용하기 쉽고 재사용하기 쉬운 래퍼
+  provider: ^4.1.3
+
+  # Firebase Cloud FireStore API
+  cloud_firestore: ^0.13.6
+  # Firebase Cloud Storage API
+  firebase_storage: ^3.1.6
+  # Firebase Auth API
+  firebase_auth: ^0.16.1
+  # Google Login API
+  google_sign_in: ^4.5.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

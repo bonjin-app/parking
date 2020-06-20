@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/home/components/home_appbar.dart';
+import 'package:parking/widgets/nm_box.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
