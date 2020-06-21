@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/tab/tab_screen.dart';
-import 'package:parking/widgets/nm_box.dart';
 
 void main() {
 //  WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +16,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        textTheme: TextTheme(bodyText2: TextStyle(color: fCL)),
       ),
       home: TabScreen(),
     );

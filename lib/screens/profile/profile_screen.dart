@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/profile/components/profile_appbar.dart';
+import 'package:parking/screens/profile/components/profile_body.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -12,6 +13,7 @@ class _ProfileScreenState extends State<ProfileScreen> with AutomaticKeepAliveCl
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ProfileAppBar(),
+      body: ProfileBody(),
     );
   }
 

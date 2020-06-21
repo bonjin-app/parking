@@ -1,14 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:parking/models/contact.dart';
-import 'package:parking/models/user.dart';
-import 'package:parking/repository/user_repository.dart';
-import 'package:parking/screens/chat_detail/chat_detail_screen.dart';
-import 'package:parking/screens/chat_detail/components/chat_last_message.dart';
 import 'package:parking/screens/home_detail/home_detail_screen.dart';
-import 'package:parking/widgets/custom_tile.dart';
-import 'package:parking/widgets/nm_box.dart';
 
 class HomeItem extends StatelessWidget {
   HomeItem({
