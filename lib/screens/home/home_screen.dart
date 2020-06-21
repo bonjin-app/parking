@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/home/components/home_appbar.dart';
-import 'package:parking/widgets/nm_box.dart';
+import 'package:parking/screens/home/components/home_item.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -12,7 +12,11 @@ class _HomeScreenState extends State<HomeScreen> with AutomaticKeepAliveClientMi
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: HomeAppBar(),
-      body: Container(),
+      body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return HomeItem();
+          }),
     );
   }
 

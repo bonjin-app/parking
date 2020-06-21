@@ -32,7 +32,7 @@ class _ChatScreenState extends State<ChatScreen>
                 children: <Widget>[
                   CircleAvatar(
                     backgroundImage: NetworkImage(
-                        "https://img.hankyung.com/photo/201903/AA.19067065.1.jpg"),
+                        "https://i.pinimg.com/originals/fa/47/c0/fa47c00f29390e50e1ae2779920b6750.jpg"),
                     maxRadius: 30,
                   ),
                 ],
