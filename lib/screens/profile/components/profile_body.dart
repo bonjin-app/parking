@@ -10,6 +10,62 @@ class ProfileBody extends StatelessWidget {
         child: Column(
           children: <Widget>[
             _buildProfile(),
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                  border: Border(
+                      bottom: BorderSide(
+                width: 1,
+                color: Colors.grey.shade200,
+              ))),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    children: [
+                      Icon(Icons.assignment, size: 50,),
+                      SizedBox(height: 10,),
+                      Text(
+                        "판매내역",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(Icons.shop, size: 50,),
+                      SizedBox(height: 10,),
+                      Text(
+                        "구매내역",
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(Icons.favorite, size: 50,),
+                      SizedBox(height: 10,),
+                      Text(
+                        "관심목록",
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
 
             ProfileItem(
               icon: Icons.location_on,
@@ -106,9 +162,25 @@ class ProfileBody extends StatelessWidget {
           ),
           Column(
             children: <Widget>[
-              RaisedButton(
-                child: Text("프로필 보기"),
-              )
+              FlatButton.icon(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 20.0,
+                ),
+                color: Colors.blue,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.person,
+                  color: Colors.white,
+                ),
+                label: Text(
+                  '프로필 보기',
+                ),
+                textColor: Colors.white,
+              ),
             ],
           )
         ],
