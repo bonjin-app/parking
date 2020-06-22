@@ -1,39 +1,73 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/profile/components/profile_item.dart';
-import 'package:parking/widgets/design.dart';
 
 class ProfileBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          _buildProfile(),
+    return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      child: Container(
+        child: Column(
+          children: <Widget>[
+            _buildProfile(),
 
-          ProfileItem(
-            icon: Icons.location_on,
-            text: "내 동네 설정",
-            onTab: (){},
-          ),
+            ProfileItem(
+              icon: Icons.location_on,
+              text: "내 동네 설정",
+              onTab: (){},
+            ),
+            ProfileItem(
+              icon: Icons.label_outline,
+              text: "키워드 알림",
+              onTab: (){},
+            ),
 
-          Design(
-            height: 55,
-            width: 55,
-            color: Color(0xFFe6ebf2),
-            offsetBlack: Offset(-2, -2),
-            offsetWhite: Offset(2, 2),
-            icon: Icons.wifi,
-            blurLevel: 5.0,
-            iconSize: 30,
-          ),
+            Divider(
+              thickness: 8,
+              color: Colors.grey[100],
+            ),
 
-        ],
+            ProfileItem(
+              icon: Icons.mail,
+              text: "친구초대",
+              onTab: (){},
+            ),
+            ProfileItem(
+              icon: Icons.share,
+              text: "주차앱 공유",
+              onTab: (){},
+            ),
+            ProfileItem(
+              icon: Icons.notifications_none,
+              text: "공지사항",
+              onTab: (){},
+            ),
+            ProfileItem(
+              icon: Icons.headset_mic,
+              text: "자주 묻는 질문",
+              onTab: (){},
+            ),
+            ProfileItem(
+              icon: Icons.settings,
+              text: "앱 설정",
+              onTab: (){},
+            ),
+          ],
+        ),
       ),
     );
   }
 
   Widget _buildProfile() {
     return Container(
+      decoration: BoxDecoration(
+          border: Border(
+              bottom: BorderSide(
+                width: 1,
+                color: Colors.grey.shade200,
+              )
+          )
+      ),
       padding: EdgeInsets.all(16),
       child: Row(
         children: <Widget>[
@@ -58,11 +92,14 @@ class ProfileBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text("GIGAS", style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold
                   ),),
                   SizedBox(height: 4,),
-                  Text("용인시 수지구 동천동"),
+                  Text("용인시 수지구 동천동", style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey,
+                  ),),
                 ],
               ),
             ),

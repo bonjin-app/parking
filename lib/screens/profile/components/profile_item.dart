@@ -19,18 +19,13 @@ class ProfileItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTab,
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 6),
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
-          color: Theme.of(context).accentColor,
-        ),
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(
               icon,
-              color: Colors.white,
+              color: Colors.black,
             ),
             Expanded(
               child: Container(
@@ -39,7 +34,7 @@ class ProfileItem extends StatelessWidget {
                   text,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -48,7 +43,7 @@ class ProfileItem extends StatelessWidget {
             if(isNextIcon)
               Icon(
                 Icons.navigate_next,
-                color: Colors.white,
+                color: Colors.black,
               )
 
           ],

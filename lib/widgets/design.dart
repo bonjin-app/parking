@@ -134,7 +134,7 @@ class _DesignState extends State<Design> {
             child: Icon(
               widget.icon,
               size: widget.iconSize,
-              color: Colors.blue,
+              color: Colors.black.withOpacity(0.5),
             ),
           ),
         ),

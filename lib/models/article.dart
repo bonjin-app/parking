@@ -5,5 +5,13 @@ class Article {
   String price;
   String description;
 
-  List<ArticleImage> images;
+  String imageUrl;
+
+  Article({
+    this.subject,
+    this.price,
+    this.description,
+
+    this.imageUrl,
+  });
 }

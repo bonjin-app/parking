@@ -1,11 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:parking/models/article.dart';
 import 'package:parking/screens/home_detail/home_detail_screen.dart';
+import 'package:parking/utils/route/route_fade.dart';
 
 class HomeItem extends StatelessWidget {
+  final Article article;
+
   HomeItem({
     Key key,
+    this.article,
   }) : super(key: key);
 
   @override
@@ -13,7 +18,8 @@ class HomeItem extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => HomeDetailScreen()));
+            RouteFade(page: HomeDetailScreen(article: article,)
+            ));
       },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -27,28 +33,17 @@ class HomeItem extends StatelessWidget {
         ),
         child: Row(
           children: <Widget>[
-//            Hero(
-//              tag: "transition target",
-//              child: Container(
-//                height: 100,
-//                width: 100,
-//                child: ClipRRect(
-//                  borderRadius: BorderRadius.all(Radius.circular(5)),
-//                  child: Image.network(
-//                    "https://t1.kakaocdn.net/friends/prod/product/20190925121732325_8809681700832_LittelRYAN_humidifier_BW_00.jpg",
-//                    fit: BoxFit.cover,
-//                  ),
-//                ),
-//              ),
-//            ),
-             Container(
-              height: 100,
-              width: 100,
-              child: ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(5)),
-                child: Image.network(
-                  "https://t1.kakaocdn.net/friends/prod/product/20190925121732325_8809681700832_LittelRYAN_humidifier_BW_00.jpg",
-                  fit: BoxFit.cover,
+            Hero(
+              tag: article.imageUrl,
+              child: Container(
+                height: 100,
+                width: 100,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  child: Image.network(
+                    article.imageUrl,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parking/screens/category/components/category_appbar.dart';
+import 'package:parking/screens/category/components/category_body.dart';
 
 class CategoryScreen extends StatefulWidget {
   @override
@@ -11,6 +12,7 @@ class _CategoryScreenState extends State<CategoryScreen> with AutomaticKeepAlive
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CategoryAppBar(),
+      body: CategoryBody(),
     );
   }
 

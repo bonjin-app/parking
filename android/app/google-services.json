@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "745687620870",
+    "firebase_url": "https://parking-8a94a.firebaseio.com",
+    "project_id": "parking-8a94a",
+    "storage_bucket": "parking-8a94a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745687620870:android:5b168ed194b25b59c35287",
+        "android_client_info": {
+          "package_name": "kr.co.bonjin.parking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745687620870-e5b65ue99rb65matgrnh8e8h58c0bqlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFUUTsUbG6TJYoC3QTmD4HENTmcGGCTLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745687620870-e5b65ue99rb65matgrnh8e8h58c0bqlc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "745687620870-170kvp6krh1otv0m9vbn8h34hicndkao.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.co.bonjin.parking"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

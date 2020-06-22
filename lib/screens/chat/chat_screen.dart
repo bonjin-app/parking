@@ -14,6 +14,7 @@ class _ChatScreenState extends State<ChatScreen>
     return Scaffold(
       appBar: ChatAppBar(),
       body: ListView.builder(
+        physics: BouncingScrollPhysics(),
         padding: EdgeInsets.symmetric(horizontal: 16),
         itemCount: 10,
         itemBuilder: (context, index) {
