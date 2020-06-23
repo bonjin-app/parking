@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:parking/screens/profile/components/profile_item.dart';
+import 'package:parking/screens/setting/setting_screen.dart';
 
 class ProfileBody extends StatelessWidget {
   @override
@@ -106,7 +108,13 @@ class ProfileBody extends StatelessWidget {
             ProfileItem(
               icon: Icons.settings,
               text: "앱 설정",
-              onTab: (){},
+              onTab: (){
+                Navigator.push(context,
+                  CupertinoPageRoute(
+                    builder: (context) => SettingScreen(),
+                  ),
+                );
+              },
             ),
           ],
         ),

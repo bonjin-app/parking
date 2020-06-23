@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:parking/screens/setting/setting_screen.dart';
 import 'package:parking/widgets/custom_appbar.dart';
 
 class ProfileAppBar extends StatelessWidget with PreferredSizeWidget {
@@ -17,6 +19,11 @@ class ProfileAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: <Widget>[
         IconButton(
           onPressed: () {
+            Navigator.push(context,
+                CupertinoPageRoute(
+                  builder: (context) => SettingScreen(),
+                ),
+            );
           },
           icon: Icon(
             Icons.settings,
